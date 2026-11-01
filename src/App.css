@@ -88,3 +88,28 @@ input:focus, select:focus { outline: 2px solid var(--kuning); border-color: var(
   .header h1 { font-size: 1.4rem; }
   .ringkasan-angka { font-size: 1.6rem; }
 }
+
+/* ---------- Tugas 7: data guru dari API (loading / success / error) ---------- */
+.bagian-guru { margin-top: 2rem; }
+.daftar-guru { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem; }
+.kartu-guru { background: #fff; border: 1px solid var(--garis); border-left: 4px solid var(--kuning); border-radius: 10px; padding: 1rem; }
+.kartu-guru h3 { margin: 0 0 .5rem; font-size: 1.05rem; }
+.kartu-guru dl { margin: 0; }
+.kartu-guru dt { font-size: .8rem; color: var(--abu); }
+.kartu-guru dd { margin: 0 0 .4rem; font-weight: 700; word-break: break-word; }
+
+.status-kotak {
+  background: #fff; border: 1px solid var(--garis); border-radius: 10px;
+  padding: 2rem 1rem; text-align: center; color: var(--abu);
+}
+.status-kotak p { margin: 0 0 .5rem; }
+.status-error { border-color: #f0b4b4; background: #fff6f6; color: #9b1c1c; }
+.status-detail { font-size: .9rem; }
+.tombol-kecil { width: auto; margin-top: .5rem; }
+
+.spinner {
+  display: inline-block; width: 2rem; height: 2rem; margin-bottom: .75rem;
+  border: 4px solid var(--hijau-muda); border-top-color: var(--hijau); border-radius: 50%;
+  animation: putar .8s linear infinite;
+}
+@keyframes putar { to { transform: rotate(360deg); } }
